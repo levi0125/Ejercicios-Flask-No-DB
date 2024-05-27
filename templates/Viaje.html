@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+
+{% block content%}
+    <input value="Viaje" type="text" name="hidden" style="display:none">
+        
+    <label class="col-6">Numero de Alumnos:</label>
+    <input autofocus required name="alumnos" min="1" max="99" class="col-5" value="{{alumnos}}" type="number" placeholder="Base...">
+
+    <label class="col-6">Pago por Alumno:</label>
+    <input required readonly class="col-5" value="{{ppa}}" type="number">
+
+    <label class="col-6">Total:</label>
+    <input name="total" class="col-5" value="{{res}}" type="number" readonly>
+
+
+{% endblock %}

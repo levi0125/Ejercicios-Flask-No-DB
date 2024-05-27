@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block content%}
+    <input type="text" name="hidden" value="Triangulo" style="display:none">
+    
+    <label class="col-4">Base:</label>
+    <input autofocus required name="base" class="col-6" step="any" value="{{base}}" type="number" placeholder="Base...">
+
+    <label class="col-4">Altura:</label>
+    <input required name="altura" class="col-6" step="any" value="{{altura}}" type="number" placeholder="Altura...">
+
+    <label class="col-4">Total:</label>
+    <input name="total" step="any" class="col-6" value="{{res}}" type="number" readonly>
+
+{% endblock %}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu De Navegacion</title>
+    <link rel="stylesheet" href="./static/CSS/estilos.css">
+</head>
+<body class="container">
+    
+    <script src="./static/JS/basic.js"></script>    
+
+    <h1 class="text-center"><b id="tit">TITULO</b></h1>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/Triangulos">Calcular Area de Triangulos</a></li>
+            <li><a href="/Grados">Calcular Grados</a></li>
+            <li><a href="/Calificaciones">Calcular Calificaciones</a></li>
+            <li><a href="/Viaje">Viaje Escolar</a></li>
+            <li><a href="/Multiplicar">Tabla de Multiplicar</a></li>
+        </ul>
+    </nav>
+    
+    <form action="/Operaciones" method="post" class="conteiner">
+        <div class="row">
+            <span class="col-2"></span>
+            <span class="col-8" id="form">
+                <section class="row">
+                    {% block content%}
+                    {% endblock %}
+                    <span class="col-4"></span>
+                    <button type="submit" class=" col-4 btn btn-primary">Calcular</button>
+
+                </section>
+            </span>
+            <span class="col-2"></span>
+        </div>
+    </form> 
+</body>
+</html>

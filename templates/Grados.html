@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block content%}
+    <input value="Grados" type="text" name="hidden" style="display:none">
+    
+    <label class="col-5">Grados Farenheit:</label>
+    <input autofocus required name="grados" class="col-6" step="any" value="{{farenheit}}" type="number" placeholder="Base...">
+
+    <!-- <label class="col-4">Altura:</label>
+    <input required name="altura" class="col-6" value="{{altura}}" type="number" placeholder="Altura..."> -->
+
+    <label class="col-5">Grados Centigrados:</label>
+    <input name="total" step="any" class="col-6" value="{{res}}" type="number" readonly>
+
+{% endblock %}

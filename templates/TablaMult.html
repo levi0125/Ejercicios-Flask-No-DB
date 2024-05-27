@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+
+{% block content%}
+    <input value="Multiplicar" type="text" name="hidden" style="display:none">
+        
+    <label class="col-12 text-center">Ingrese un numero del 2 al 10:</label>
+
+    <!-- <label class="col-4">Base:</label> -->
+    <span class="col-3"></span>
+    <input autofocus required min="2" max="10" name="numero" class="col-6 text-center" value="{{base}}" type="number" placeholder="Numero...">
+
+    <span class="col-3"></span>
+    <span class="col-2" name="total"></span>
+    
+    <textarea class="col-8 text-center" name="total" cols="10" rows="11" readonly>{{res}}</textarea>
+
+    <script src="./static/JS/TablaMult.js">
+        // console.log("Tabla")
+        // let tot
+        // window.onload=function(){
+        //     EvFinDocumento()
+        //     tot=document.getElementsByName("total");
+        //     if(tot[1].innerHTML.length<1){
+        //         for(let b=0;b<2;b++){
+        //             tot[b].style.display="none"
+        //         }
+        //     }    
+        // }
+    </script>
+{% endblock %}

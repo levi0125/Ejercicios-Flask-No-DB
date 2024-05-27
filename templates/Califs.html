@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+
+{% block content%}
+    <input value="Calificaciones" type="text" name="hidden" style="display:none">
+        
+    <label class="col-6">Calificacion:</label>
+    <input autofocus required min="0" max="10" step="any" name="calificacion" class="col-5" value="{{base}}" type="number" placeholder="Base...">
+
+    <!-- <label class="col-4">Altura:</label>
+    <input required name="altura" class="col-6" value="{{altura}}" type="number" placeholder="Altura..."> -->
+
+    <label class="col-12 text-center" name="total">{{res}}</label>
+{% endblock %}
